@@ -1,0 +1,25 @@
+/**
+    STYLESHEET FOR PROGRAMMING CLASS DATABASE ACCESS AND JSP
+    AUTHOR: Ivan Torres             DATE: 23/02/2020
+**/
+
+.FirstRow {
+
+    background-color: grey;
+}
+.ImpRow {
+
+    background-color: rgb(194, 194, 194);
+}
+.NotifBox {
+
+    background-color: rgb(175, 175, 255);
+    text-align: center;
+    border: 2px solid black;
+}
+#wrapper {
+
+    width: 80%;
+}
+
+

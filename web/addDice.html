@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-dark text-white p-3 text-center">
+            <h1>Add Dice</h1>
+        </div>
+    </header>
+    <main>
+        <form action="CreateDice.jsp" method="GET">
+            <div class="container w-25">
+                <div class="row">
+                    <div class="col my-1">Dice ID</div>
+                    <div class="col my-1">
+                        <input type="number" value=0 name="id" min="0" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-1">Dice Name</div>
+                    <div class="col my-1">
+                    <input type="text" name="name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-1">Dice Price</div>
+                    <div class="col my-1">
+                    <input type="text" value="0.00" name="price" min="0" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-1">Stock</div>
+                    <div class="col my-1">
+                    <input type="number" min="0" name="stock" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-1">Description</div>
+                    <div class="col my-1">
+                    <input type="text" name="description" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-1"> 
+                    <input type="file" name="image">
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col my-2 text-center">
+                        <input type="submit" value="Add">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
