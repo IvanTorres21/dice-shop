@@ -2,7 +2,7 @@
 Página web que consiste en una tienda de dados para juegos de rol de mesa. 
 
 ## Base de datos
-<!-- insertar imagen -->
+![](readmeImg/bd.png)
 La base de datos consta de 4 tablas:
 
 *dicesets*. Esta tabla almacena la información que se necesita sobre cada set de dados, y será de donde se conseguira la información para los productos que se mostraran en la tienda.
