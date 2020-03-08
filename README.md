@@ -21,10 +21,12 @@ La base de datos consta de 4 tablas:
 
 Al entrar en la página web el usuario se encontrará con el portal de la tienda, y si usa el enlace de la barra de navegación o baja un poco en la misma se encontrará con los productos.
 
+![](readmeImg/index2.png)
+
 Si en este momento el usuario intenta comprar algo se le redirigirá a la página de login.
 ## Inicio logeado
 
-![](readmeImg/index2.png)
+![](readmeImg/index3.png)
 
 Si el usuario está logeado el boton de login desaparecera y aparecerá uno de log out, además de un carro de la compra. Además, si es un administrador aparecerá el botón de management, el cual le permitirá acceder al CRUD de la página.
 ## Login
