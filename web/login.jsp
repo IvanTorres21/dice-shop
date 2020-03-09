@@ -28,6 +28,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Log in</button>
           <a class="btn btn-secondary m-1" href="signup.jsp">Sign up</a>
+          <a class="btn btn-danger m-1" href="index.jsp">Go back</a>
     </form> <!-- name, pswd-->
 </body>
 

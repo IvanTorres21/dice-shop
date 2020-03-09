@@ -21,6 +21,10 @@
     </header>
     <main>
         <%
+            if (session.getAttribute("admin") == null) {
+
+            response.sendRedirect("index.jsp");
+            }
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/diceshop", "root", "");
             Statement s = connection.createStatement();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style/stylesheet.css">
 </head>
+
 <body>
     <%
     if (session.getAttribute("user") != null) {
@@ -15,71 +17,48 @@
         response.sendRedirect("index.jsp");
     } 
     %>
-    <form action="createUser.jsp" method="POST">
-        <div class="container w-25">
-            <div class="row">
-                <div class="col my-1">Name</div>
-                <div class="col my-1">
-                    <input type="text" name="name" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">Surname</div>
-                <div class="col my-1">
-                    <input type="text" name="surname" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">NickName</div>
-                <div class="col my-1">
-                    <input type="text" name="nick" required>
-                </div>
-                <small>You will use this name to log in</small>
-            </div>
-            <div class="row">
-                <div class="col my-1">PassWord</div>
-                <div class="col my-1">
-                    <input type="password" name="pswd" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">Email</div>
-                <div class="col my-1">
-                    <input type="text" name="email" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">City</div>
-                <div class="col my-1">
-                    <input type="text" name="city" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">Street</div>
-                <div class="col my-1">
-                    <input type="text" name="strt" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">Number</div>
-                <div class="col my-1">
-                    <input type="text" name="number" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col my-1">Date of Birth</div>
-                <div class="col my-1">
-                    <input type="date" name="date" required>
-                </div>
-            </div>
-            <div class="row mx-auto">
-                <div class="col my-2 text-center">
-                    <input type="hidden" value="0" name="priv">
-                    <input type="submit" value="Add">
-                </div>
-            </div>
+    <form action="createUser.jsp" method="POST" class="mx-auto w-50 my-4">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name">
         </div>
+        <div class="form-group">
+            <label for="sname">Surname</label>
+            <input type="text" class="form-control" name="surname" id="sname">
+        </div>
+        <div class="form-group">
+            <label for="nick">Nickname</label>
+            <input type="text" class="form-control" name="nick" id="nick">
+            <small>You will use this name to log in</small>
+        </div>
+        <div class="form-group">
+            <label for="pswd">PassWord</label>
+            <input type="password" class="form-control" name="pswd" id="pswd">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control" name="city" id="city">
+        </div>
+        <div class="form-group">
+            <label for="strt">Street</label>
+            <input type="text" class="form-control" name="strt" id="strt">
+        </div>
+        <div class="form-group">
+            <label for="number">Number</label>
+            <input type="text" class="form-control" name="number" id="number">
+        </div>
+        <div class="form-group">
+            <label for="date">Date of Birth</label>
+            <input type="date" class="form-control" name="date" id="date">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+        <a class="btn btn-danger m-1" href="login.jsp">Go back</a>
     </form>
 
 </body>
+
 </html>

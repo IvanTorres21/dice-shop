@@ -78,7 +78,7 @@ public class Cart {
 
             dice.add(dic);
         }
-        this.toPay += dic.getPreDic();
+        this.toPay += (dic.getPreDic() * dic.getCantidad());
     }
     /**
      * Fuction that deletes a dice from the cart
@@ -92,8 +92,11 @@ public class Cart {
             if (d.getCodDic() == cod) {
 
                 aux = d;
+                
             }
+            
         }
+        this.toPay = (this.toPay) - (aux.getPreDic() * aux.getCantidad());
         dice.remove(aux);
     }
 }
