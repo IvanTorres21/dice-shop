@@ -1,13 +1,14 @@
 # Dice Shop
 Página web que consiste en una tienda de dados para juegos de rol de mesa. 
 
+Enlace al video explicativo [aquí](https://youtu.be/xLVxfBMnPMk)
 ## Base de datos
 
 ![](readmeImg/bd.png)
 
 La base de datos consta de 4 tablas:
 
-*dicesets*. Esta tabla almacena la información que se necesita sobre cada set de dados, y será de donde se conseguira la información para los productos que se mostraran en la tienda.
+*dicesets*. Esta tabla almacena la información que se necesita sobre cada set de dados, y será de donde se conseguirá la información para los productos que se mostraran en la tienda.
 
 *user*. Esta tabla contiene los datos de los usuarios, siendo los más importantes el nickname y la password (para el inicio de sesion) y el credito (con lo que se sabra si puede o no comprar).
 
